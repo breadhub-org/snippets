@@ -11,7 +11,7 @@ const nhs_multipliers = {'1': 10, '2': 9, '3': 8, '4': 7, '5': 6, '6': 5, '7': 4
 
 function nhs_number_validator(nhs_number) {
   const number = String(nhs_number);
-  if (is_valid_nhs_number(number)) {
+  if (nhs_number.length === 10) {
     let current_number = 0;
     let current_sum = 0;
     let current_multiplier = 0;
@@ -41,10 +41,4 @@ function nhs_number_validator(nhs_number) {
     return false;
   }
 }
-
-function is_valid_nhs_number(nhs_number) {
-  debug_log("is_valid_nhs_number: nhs_number: " + nhs_number + ", length: " + nhs_number.length);
-  return nhs_number.length === 10;
-}
-
 // Snippet Code end
