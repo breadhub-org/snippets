@@ -27,7 +27,7 @@ function nhs_number_validator(nhs_number) {
 
     remainder = current_sum % 11;
     total = 11 - remainder;
-    debug_log("nhs_number_validator: nhs_number: " + number + ", current_sum: " + current_sum + ", checkNumber: " + checkNumber + ", remainder: " + remainder + ", total: " + total);
+    // debug_log("nhs_number_validator: nhs_number: " + number + ", current_sum: " + current_sum + ", checkNumber: " + checkNumber + ", remainder: " + remainder + ", total: " + total);
 
     switch (total) {
       case 11:
